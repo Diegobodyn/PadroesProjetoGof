@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class Principal {
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String args) throws IOException {
 		Map<String, Object> mapa = new HashMap<>();
 		mapa.put("nome", "Diego Henrique Silva");
-		mapa.put("idade", 32);
+		mapa.put("idade", 30);
 		
 		GeradorArquivo gerador = new GeradorArquivo();
 		gerador.gerarArquivo("c:\\Gerador\\Cripto.txt", mapa, "PROPRIEDADES_CRIPTOGRAFADO");

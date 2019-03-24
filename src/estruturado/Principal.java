@@ -7,7 +7,7 @@ public class Principal {
 	
 	public static void main(String[] args) throws IOException {
 		Map<String, Object> mapa = new HashMap<>();
-		mapa.put("nome", "Leonam");
+		mapa.put("nome", "Diego Henrique Silva");
 		mapa.put("idade", 32);
 		
 		GeradorArquivo gerador = new GeradorArquivo();

@@ -2,11 +2,19 @@ package estruturado;
 
 import java.io.IOException;
 
-public class ProcessaDefalt implements Processador {
+public class ProcessaDefalt extends Processador {
+	
+	public ProcessaDefalt (Processador proximo) {
+		super(proximo);	
+	}
+	
+    public ProcessaDefalt() {
+		// TODO Auto-generated constructor stub
+	} 
 	
 	
 	@Override
-	public byte[] processaConteudo(byte[] conteudo ) throws IOException {
+	protected byte[] processaConteudo(byte[] conteudo ) throws IOException {
 		   return conteudo;
 	   }
 

@@ -1,6 +1,14 @@
 package estruturado;
 
-public class ProcessaCriptografado implements Processador {
+public class ProcessaCriptografado extends Processador {
+	
+	public ProcessaCriptografado(Processador proximo) {
+		super(proximo);	
+	}
+	
+	 public ProcessaCriptografado() {
+			
+		}
 
 	@Override
 	public byte[] processaConteudo(byte[] bytes) {
